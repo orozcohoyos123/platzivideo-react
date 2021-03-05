@@ -2,11 +2,9 @@ import React from 'react';
 import '../assets/styles/components/Categories.scss';
 import '../assets/styles/components/CarouselItem.scss';
 
-const categoriesTitle = 'Mi lista';
-
-const Categories = ({ children }) => (
+const Categories = ({ children, title }) => (
   <div className="categories">
-    <h3 className="categories__title">{categoriesTitle}</h3>
+    <h3 className="categories__title">{title}</h3>
     {children}
   </div>
 );
